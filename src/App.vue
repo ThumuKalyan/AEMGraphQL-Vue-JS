@@ -6,7 +6,14 @@
 </template>
 
 <script>
+
+import Vue from 'vue'
+import axios from 'axios'
 import HelloWorld from './components/HelloWorld.vue'
+
+
+Vue.prototype.$http = axios 
+
 
 export default {
   name: 'App',
